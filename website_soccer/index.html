@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena Society — Quadras & Lazer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+
+<header id="header">
+  <div class="container">
+    <a href="#hero" class="logo">
+      <div class="logo-icon">
+
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13l-4 4 1.41 1.41L11 9.83V15h2V9.83l2.59 2.58L17 11l-4-4h-2z"/>
+        </svg>
+      </div>
+      <span class="logo-text">ARENA SOCIETY</span>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#courts">Quadras</a></li>
+        <li><a href="#pricing">Valores</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#contact" class="btn btn-primary">Reservar Agora</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <span class="mobile-close" id="mobileClose">✕</span>
+  <a href="#hero"        onclick="closeMobile()">Início</a>
+  <a href="#courts"      onclick="closeMobile()">Quadras</a>
+  <a href="#pricing"     onclick="closeMobile()">Valores</a>
+  <a href="#gallery"     onclick="closeMobile()">Galeria</a>
+  <a href="#contact"     onclick="closeMobile()">Contato</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Reservar Agora</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-field"></div>
+  <div class="container hero-content">
+    <div class="hero-eyebrow reveal">
+      <span class="tag">🏟️ Arena Society </span>
+    </div>
+    <h1 class="hero-title reveal">
+      ONDE O<br/><span>ESPORTE</span><br/>REÚNE<br/>FAMÍLIA
+    </h1>
+    <p class="hero-sub reveal">
+      2 quadras society de futebol + 1 quadra de vôlei de praia. O espaço perfeito para jogar, celebrar e criar memórias com quem você ama.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#contact" class="btn btn-primary">
+        ⚽ Reservar Quadra
+      </a>
+      <a href="#courts" class="btn btn-white">
+        Ver Quadras →
+      </a>
+    </div>
+    <div class="hero-stats reveal">
+      <div>
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-label">Quadras</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">500+</div>
+        <div class="hero-stat-label">Clientes Felizes</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-label">Dias por semana</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<section id="courts">
+  <div class="container">
+    <div class="courts-header">
+      <div>
+        <span class="tag reveal">Nossas Instalações</span>
+        <h2 class="section-heading reveal" style="margin-top:12px">CONHEÇA<br/>NOSSAS QUADRAS</h2>
+      </div>
+      <p class="section-sub reveal">Quadras profissionais mantidas com gramado sintético de alta qualidade e iluminação noturna completa.</p>
+    </div>
+    <div class="courts-grid">
+
+
+      <div class="court-card reveal">
+        <div class="court-visual soccer-1">
+          <div class="field-lines">⚽</div>
+          <span class="court-badge">Quadra 1</span>
+        </div>
+        <div class="court-body">
+          <div class="court-icon">⚽</div>
+          <h3 class="court-name">Society Futebol 7</h3>
+          <p class="court-desc">Gramado sintético de 4ª geração, marcações oficiais, gols com rede reforçada. Ideal para peladas animadas e torneios.</p>
+          <div class="court-meta">
+            <span class="court-tag">7 players</span>
+            <span class="court-tag">Luz Noturna</span>
+            <span class="court-tag">Gramado Sintético</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="court-card reveal" style="transition-delay:.1s">
+        <div class="court-visual soccer-2">
+          <div class="field-lines">🥅</div>
+          <span class="court-badge">Quadra 2</span>
+        </div>
+        <div class="court-body">
+          <div class="court-icon">🥅</div>
+          <h3 class="court-name">Society Futebol 5</h3>
+          <p class="court-desc">Perfeita para partidas rápidas e intensas. Dimensões 5x5, sistema de drenagem eficiente e alambrado de proteção total.</p>
+          <div class="court-meta">
+            <span class="court-tag">5 players</span>
+            <span class="court-tag">Luz Noturna</span>
+            <span class="court-tag">Alambrado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="court-card reveal" style="transition-delay:.2s">
+        <div class="court-visual beach">
+          <div class="field-lines">🏐</div>
+          <span class="court-badge">Quadra 3</span>
+        </div>
+        <div class="court-body">
+          <div class="court-icon">🏐</div>
+          <h3 class="court-name">Vôlei de Praia</h3>
+          <p class="court-desc">Areia fina e tratada, rede oficial regulamentada. Diversão garantida para amigos e família com a vibe da praia no interior.</p>
+          <div class="court-meta">
+            <span class="court-tag">2×2 / 4×4</span>
+            <span class="court-tag">Areia Fina</span>
+            <span class="court-tag">Rede Oficial</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="family">
+  <div class="container">
+    <div class="family-inner">
+      <div class="family-content reveal-left">
+        <span class="tag">🏡 Espaço Família</span>
+        <h2 class="section-heading">UM LUGAR PARA<br/>TODA A FAMÍLIA</h2>
+        <p class="section-sub">Na Arena Santa Laura, o lazer vai além das quadras. Criamos um ambiente seguro, confortável e completo para todos aproveitarem o dia.</p>
+        <div class="family-features">
+          <div class="family-feat">
+            <div class="family-feat-icon">🅿️</div>
+            <div class="family-feat-title">Estacionamento</div>
+            <div class="family-feat-desc">Espaço amplo e monitorado para seus veículos</div>
+          </div>
+          <div class="family-feat">
+            <div class="family-feat-icon">🍺</div>
+            <div class="family-feat-title">Área de Lazer</div>
+            <div class="family-feat-desc">Lounge com mesas, bar e lanches disponíveis</div>
+          </div>
+          <div class="family-feat">
+            <div class="family-feat-icon">👶</div>
+            <div class="family-feat-title">Kids Zone</div>
+            <div class="family-feat-desc">Espaço seguro com brinquedos para as crianças</div>
+          </div>
+          <div class="family-feat">
+            <div class="family-feat-icon">🔒</div>
+            <div class="family-feat-title">Ambiente Seguro</div>
+            <div class="family-feat-desc">CFTV e equipe treinada para sua tranquilidade</div>
+          </div>
+        </div>
+      </div>
+      <div class="family-visual reveal-right">
+        <div class="family-vis-main">🏟️</div>
+        <div class="family-vis-card">
+          <div class="fvc-num">⭐ 4.9</div>
+          <div class="fvc-label">Avaliação média<br/>no Google Maps</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="pricing">
+  <div class="container">
+    <div class="pricing-header">
+      <span class="tag reveal">Planos & Valores</span>
+      <h2 class="section-heading reveal" style="margin-top:12px">TARIFAS<br/>TRANSPARENTES</h2>
+      <p class="section-sub reveal">Sem taxas escondidas. Escolha o horário e o tipo de quadra que melhor encaixa na sua agenda.</p>
+    </div>
+    <div class="pricing-grid">
+
+
+      <div class="pricing-card reveal">
+        <div class="pricing-period">Horário Diurno</div>
+        <div class="pricing-name">Manhã & Tarde</div>
+        <div class="pricing-price">
+          <span class="price-currency">R$</span>
+          <span class="price-value">X</span>
+          <span class="price-unit">/hora</span>
+        </div>
+        <p class="pricing-note">Seg–Sex, 08h às 18h</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li>Quadra Society Futebol</li>
+          <li>Iluminação natural</li>
+          <li>Vestiários inclusos</li>
+          <li class="muted">Colete de identificação</li>
+          <li class="muted">Desconto em grupo</li>
+        </ul>
+        <div class="pricing-action">
+          <a href="#contact" class="btn btn-outline">Reservar</a>
+        </div>
+      </div>
+
+
+      <div class="pricing-card featured reveal" style="transition-delay:.1s">
+        <span class="featured-badge">⚡ Mais Popular</span>
+        <div class="pricing-period">Horário Noturno</div>
+        <div class="pricing-name">Noite & Final de Semana</div>
+        <div class="pricing-price">
+          <span class="price-currency">R$</span>
+          <span class="price-value">X</span>
+          <span class="price-unit">/hora</span>
+        </div>
+        <p class="pricing-note">Seg–Dom, 18h às 23h</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li>Qualquer quadra</li>
+          <li>Iluminação LED completa</li>
+          <li>Vestiários inclusos</li>
+          <li>Colete de identificação</li>
+          <li class="muted">Desconto em grupo</li>
+        </ul>
+        <div class="pricing-action">
+          <a href="#contact" class="btn btn-primary">Reservar Agora</a>
+        </div>
+      </div>
+
+
+      <div class="pricing-card reveal" style="transition-delay:.2s">
+        <div class="pricing-period">Mensalista</div>
+        <div class="pricing-name">Plano Fidelidade</div>
+        <div class="pricing-price">
+          <span class="price-currency">R$</span>
+          <span class="price-value">X</span>
+          <span class="price-unit">/mês</span>
+        </div>
+        <p class="pricing-note">1 horário fixo por semana</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li>Horário fixo garantido</li>
+          <li>Iluminação inclusa</li>
+          <li>Vestiários inclusos</li>
+          <li>Colete de identificação</li>
+          <li>Desconto em eventos</li>
+        </ul>
+        <div class="pricing-action">
+          <a href="#contact" class="btn btn-outline">Fale Conosco</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="margin-top:36px; background:linear-gradient(135deg, var(--green-dark), var(--green)); border-radius:var(--radius-lg); padding:28px 36px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; color:#fff;">
+      <div>
+        <div style="font-family:var(--font-display); font-size:1.5rem; letter-spacing:.05em;">🎉 PROMOÇÃO ESPECIAL — ANIVERSÁRIOS & EVENTOS</div>
+        <div style="font-size:.9rem; opacity:.75; margin-top:4px;">Reserve 2 horas ou mais e ganhe desconto especial + espaço para confraternização gratuito.</div>
+      </div>
+      <a href="#contact" class="btn btn-white">Consultar Promoção →</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <div>
+        <span class="tag reveal">Fotos & Momentos</span>
+        <h2 class="section-heading reveal" style="margin-top:12px">GALERIA DA<br/>ARENA</h2>
+      </div>
+      <p class="section-sub reveal">Cada jogo é uma história. Veja os momentos que fazem da Arena Santa Laura um lugar especial.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <div class="gallery-placeholder gp1">
+          <div class="gallery-icon">⚽</div>
+        </div>
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:.08s">
+        <div class="gallery-placeholder gp2">
+          <div class="gallery-icon">🥅</div>
+        </div>
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:.16s">
+        <div class="gallery-placeholder gp3">
+          <div class="gallery-icon">🏐</div>
+        </div>
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:.24s">
+        <div class="gallery-placeholder gp4">
+          <div class="gallery-icon">🏆</div>
+        </div>
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:.32s">
+        <div class="gallery-placeholder gp5">
+          <div class="gallery-icon">🎉</div>
+        </div>
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:.40s">
+        <div class="gallery-placeholder gp6">
+          <div class="gallery-icon">👨‍👩‍👧‍👦</div>
+        </div>
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-header">
+      <span class="tag reveal">Depoimentos</span>
+      <h2 class="section-heading reveal" style="margin-top:12px">O QUE NOSSOS<br/>CLIENTES DIZEM</h2>
+      <p class="section-sub reveal">Mais de 500 famílias e times escolheram a Arena Santa Laura. Veja o que eles falam.</p>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card reveal">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Lugar incrível! A quadra está sempre bem cuidada, o gramado é de altíssima qualidade e o atendimento é excepcional. Já agendamos mensalidade para nosso time.</p>
+        <div class="testi-author">
+          <div class="testi-avatar av1">MR</div>
+          <div>
+            <div class="testi-name">Marcos Rodrigues</div>
+            <div class="testi-role">Capitão de time amador</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:.1s">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Levei minha família no final de semana e foi perfeito. As crianças adoraram o espaço kids e eu consegui jogar vôlei de praia com os amigos. Definitivamente voltaremos!</p>
+        <div class="testi-author">
+          <div class="testi-avatar av2">AS</div>
+          <div>
+            <div class="testi-name">Ana Santos</div>
+            <div class="testi-role">Mãe & cliente fiel</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal" style="transition-delay:.2s">
+        <div class="testi-quote">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Fizemos o confraternização da empresa aqui e foi um sucesso total. Espaço espaçoso, iluminação ótima à noite e a equipe da arena ajudou em tudo. Super recomendo!</p>
+        <div class="testi-author">
+          <div class="testi-avatar av3">RL</div>
+          <div>
+            <div class="testi-name">Ricardo Lima</div>
+            <div class="testi-role">Organizador de eventos</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="location">
+  <div class="container">
+    <div class="location-inner">
+      <div class="location-content reveal-left">
+        <span class="tag">📍 Localização</span>
+        <h2 class="section-heading">FÁCIL DE<br/>ENCONTRAR</h2>
+
+        <div class="location-info-item">
+          <div class="loc-icon">📍</div>
+          <div>
+            <div class="loc-label">Endereço</div>
+            <div class="loc-value">Rua Exemplo, 123 — Bairro Centro<br/>Três Lagoas, MS — CEP 79600-000</div>
+          </div>
+        </div>
+
+        <div class="location-info-item">
+          <div class="loc-icon">⏰</div>
+          <div>
+            <div class="loc-label">Horário de Funcionamento</div>
+            <div class="loc-value">Segunda a Sexta: 08h – 23h<br/>Sábado e Domingo: 07h – 23h</div>
+          </div>
+        </div>
+
+        <div class="location-info-item">
+          <div class="loc-icon">📞</div>
+          <div>
+            <div class="loc-label">Telefone / WhatsApp</div>
+            <div class="loc-value">(67) 9 9999-9999</div>
+          </div>
+        </div>
+
+        <div class="location-info-item">
+          <div class="loc-icon">📧</div>
+          <div>
+            <div class="loc-label">E-mail</div>
+            <div class="loc-value">contato: arena@gmail.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrapper reveal-right">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116885.50977388!2d-51.74862!3d-20.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e7e2b1fa2e45%3A0x1234abcd5678ef90!2sTr%C3%AAs%20Lagoas%2C%20MS!5e0!3m2!1spt-BR!2sbr!4v1691000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Arena Society Santa Laura">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+
+      <div class="contact-aside reveal-left">
+        <span class="tag">📅 Reservas</span>
+        <h2 class="section-heading">RESERVE SUA<br/>QUADRA</h2>
+        <p class="section-sub">Preencha o formulário ao lado ou entre em contato diretamente. Respondemos em até 1 hora.</p>
+
+        <div class="contact-channel">
+          <div class="ch-icon">💬</div>
+          <div>
+            <div class="ch-label">WhatsApp</div>
+            <div class="ch-value">(67) 9 9999-9999</div>
+          </div>
+        </div>
+        <div class="contact-channel">
+          <div class="ch-icon">📸</div>
+          <div>
+            <div class="ch-label">Instagram</div>
+            <div class="ch-value">@arenasociety</div>
+          </div>
+        </div>
+        <div class="contact-channel">
+          <div class="ch-icon">📘</div>
+          <div>
+            <div class="ch-label">Facebook</div>
+            <div class="ch-value">Arena Society</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="booking-form" id="bookingForm">
+          <div class="form-title">Solicitar Reserva</div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nome Completo *</label>
+              <input type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label>WhatsApp / Telefone *</label>
+              <input type="tel" placeholder="(67) 9 9999-9999" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Quadra Desejada *</label>
+              <select required>
+                <option value="" disabled selected>Selecione…</option>
+                <option>⚽ Society Futebol 7 (Quadra 1)</option>
+                <option>⚽ Society Futebol 5 (Quadra 2)</option>
+                <option>🏐 Vôlei de Praia (Quadra 3)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Data *</label>
+              <input type="date" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Horário Início *</label>
+              <input type="time" required />
+            </div>
+            <div class="form-group">
+              <label>Horário Fim *</label>
+              <input type="time" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Observações</label>
+            <textarea placeholder="Evento especial? Número de jogadores? Alguma necessidade específica?"></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button class="btn btn-primary" onclick="submitForm(event)">
+              📅 Enviar Solicitação
+            </button>
+          </div>
+        </div>
+
+        <!-- Success state -->
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✅</div>
+          <h3 style="font-family:var(--font-display); font-size:1.8rem; margin-bottom:10px;">RESERVA SOLICITADA!</h3>
+          <p>Recebemos sua solicitação. Entraremos em contato pelo WhatsApp em até 1 hora para confirmar disponibilidade.</p>
+          <br/>
+          <a href="#" onclick="resetForm()" class="btn btn-outline" style="margin:auto; display:inline-flex;">Nova Reserva</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13l-4 4 1.41 1.41L11 9.83V15h2V9.83l2.59 2.58L17 11l-4-4h-2z"/></svg></div>
+          <span class="logo-text">ARENA SANTA LAURA</span>
+        </a>
+        <p>O melhor espaço para esporte e lazer em Três Lagoas. Quadras society e beach volleyball para toda a família.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#courts">Quadras</a></li>
+          <li><a href="#family">Espaço Família</a></li>
+          <li><a href="#pricing">Valores</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quadras</h4>
+        <ul>
+          <li><a href="#courts">Society Futebol 7</a></li>
+          <li><a href="#courts">Society Futebol 5</a></li>
+          <li><a href="#courts">Vôlei de Praia</a></li>
+          <li><a href="#contact">Reservar Agora</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+556799999999">(67) 9 9999-9999</a></li>
+          <li><a href="e-mail:arenasociety@gmail.com">Enviar E-mail</a></li>
+          <li><a href="#location">Como Chegar</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Arena Society. Todos os direitos reservados.</span>
+      <span>Feito com 💚 em Três Lagoas, MS</span>
+    </div>
+  </div>
+</footer>
+
+
+<a
+  href="https://wa.me/5567999999999?text=Olá!%20Quero%20reservar%20uma%20quadra%20na%20Arena%20Santa%20Laura."
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chamar no WhatsApp"
+>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wapp-text">Reservar pelo WhatsApp</span>
+</a>
+<script src="app.js"></script>
+</body>
+</html>
