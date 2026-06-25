@@ -1,7 +1,5 @@
 
-    /* =============================================
-       DESIGN TOKENS & RESET
-    ============================================= */
+    /*  DESIGN TOKENS & RESET  */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -51,9 +49,7 @@
       margin-inline: auto;
     }
 
-    /* =============================================
-       UTILITY
-    ============================================= */
+    /* UTILITY */
     .tag {
       display: inline-flex;
       align-items: center;
@@ -123,9 +119,7 @@
       background: var(--green-lite);
     }
 
-    /* =============================================
-       SCROLL REVEAL
-    ============================================= */
+    /* SCROLL REVEAL */
     .reveal {
       opacity: 0;
       transform: translateY(40px);
@@ -140,9 +134,7 @@
     .reveal-left.visible,
     .reveal-right.visible { transform: none; }
 
-    /* =============================================
-       HEADER
-    ============================================= */
+    /* HEADER */
     #header {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -264,9 +256,7 @@
       line-height: 1;
     }
 
-    /* =============================================
-       HERO
-    ============================================= */
+    /* HERO */
     #hero {
       min-height: 100vh;
       position: relative;
@@ -399,9 +389,7 @@
       60%      { transform: translateY(8px); opacity: .2; }
     }
 
-    /* =============================================
-       COURTS
-    ============================================= */
+    /* COURTS */
     #courts {
       padding: 100px 0;
       background: var(--off-white);
@@ -505,9 +493,7 @@
       border-radius: 99px;
     }
 
-    /* =============================================
-       FAMILY SPACE
-    ============================================= */
+    /* FAMILY SPACE */
     #family {
       padding: 100px 0;
       background: var(--gray-1);
@@ -597,9 +583,7 @@
       line-height: 1.4;
     }
 
-    /* =============================================
-       PRICING
-    ============================================= */
+    /* PRICING */
     #pricing {
       padding: 100px 0;
       background: var(--white);
@@ -712,9 +696,7 @@
     .pricing-action { margin-top: 28px; }
     .pricing-action .btn { width: 100%; justify-content: center; }
 
-    /* =============================================
-       GALLERY
-    ============================================= */
+    /* GALLERY */
     #gallery {
       padding: 100px 0;
       background: var(--off-white);
@@ -789,9 +771,7 @@
     }
     .gallery-item:first-child .gallery-icon { font-size: 8rem; }
 
-    /* =============================================
-       TESTIMONIALS
-    ============================================= */
+    /* TESTIMONIALS */
     #testimonials {
       padding: 100px 0;
       background: var(--white);
@@ -854,9 +834,7 @@
     .testi-name { font-weight: 600; font-size: .9rem; }
     .testi-role { font-size: .78rem; color: var(--gray-4); }
 
-    /* =============================================
-       LOCATION
-    ============================================= */
+    /* LOCATION */
     #location {
       padding: 100px 0 0;
       background: var(--gray-1);
@@ -901,9 +879,7 @@
       filter: grayscale(30%) invert(5%);
     }
 
-    /* =============================================
-       CONTACT / BOOKING
-    ============================================= */
+    /* CONTACT / BOOKING */
     #contact {
       padding: 100px 0;
       background: var(--off-white);
@@ -999,9 +975,7 @@
     .form-success .success-icon { font-size: 3rem; margin-bottom: 12px; }
     .form-success p { color: var(--gray-3); }
 
-    /* =============================================
-       FOOTER
-    ============================================= */
+    /* FOOTER */
     footer {
       background: var(--gray-2);
       color: rgba(255,255,255,.55);
@@ -1060,9 +1034,7 @@
       font-size: .8rem;
     }
 
-    /* =============================================
-       FLOATING WHATSAPP
-    ============================================= */
+    /* FLOATING WHATSAPP */
     .whatsapp-float {
       position: fixed;
       bottom: 28px; right: 28px;
@@ -1092,9 +1064,7 @@
     .wapp-text { white-space: nowrap; }
     @media (max-width: 540px) { .wapp-text { display: none; } }
 
-    /* =============================================
-       RESPONSIVE
-    ============================================= */
+    /* RESPONSIVE */
     @media (max-width: 1024px) {
       .courts-grid { grid-template-columns: 1fr 1fr; }
       .pricing-grid { grid-template-columns: 1fr 1fr; }

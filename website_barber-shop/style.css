@@ -46,7 +46,7 @@
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
   }
 
-  /* ============ HEADER ============ */
+  /*  HEADER  */
   header{
     position:fixed; top:0; left:0; right:0; z-index:100;
     padding:22px 0;
@@ -83,7 +83,7 @@
   .burger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none;}
   .burger span{width:24px; height:2px; background:var(--bone);}
 
-  /* ============ HERO ============ */
+  /*  HERO  */
   .hero{
     position:relative;
     min-height:100vh;
@@ -169,14 +169,14 @@
   }
   .razor-caption strong{color:var(--bone); font-family:'Fraunces',serif; font-size:1.05rem; font-weight:600;}
 
-  /* ============ SECTION GENERICS ============ */
+  /*  SECTION GENERICS  */
   section{padding:120px 0;}
   .section-head{max-width:640px; margin-bottom:64px;}
   .section-head .eyebrow{margin-bottom:18px;}
   .section-head h2{font-size:clamp(2rem, 3.6vw, 2.8rem); color:var(--bone);}
   .section-head p{color:var(--bone-dim); margin-top:18px; font-size:1.05rem; line-height:1.6;}
 
-  /* ============ SERVICES ============ */
+  /*  SERVICES  */
   .services{background:var(--bg-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .service-list{display:flex; flex-direction:column;}
   .service-row{
@@ -193,7 +193,7 @@
   .service-time{font-size:0.85rem; color:var(--bone-dim); white-space:nowrap;}
   .service-price{font-family:'Fraunces',serif; font-size:1.3rem; color:var(--copper-light); font-weight:600; white-space:nowrap;}
 
-  /* ============ GALLERY (process) ============ */
+  /*  GALLERY */
   .process{display:grid; grid-template-columns:repeat(3,1fr); gap:28px;}
   .process-card{
     border:1px solid var(--line); border-radius:6px; padding:36px 30px;
@@ -205,7 +205,7 @@
   .process-card h3{font-size:1.3rem; color:var(--bone); margin-bottom:12px; font-weight:600;}
   .process-card p{color:var(--bone-dim); font-size:0.95rem; line-height:1.6;}
 
-  /* ============ TEAM ============ */
+  /* TEAM  */
   .team{background:var(--bg-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .team-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:30px;}
   .barber-card{text-align:left;}
@@ -224,7 +224,7 @@
   .barber-card h3{font-family:'Fraunces',serif; font-size:1.3rem; color:var(--bone); font-weight:600;}
   .barber-card .role{color:var(--bone-dim); font-size:0.9rem; margin-top:4px;}
 
-  /* ============ TESTIMONIALS ============ */
+  /*  TESTIMONIALS  */
   .testi-track-wrap{overflow:hidden; position:relative;}
   .testi-track{display:flex; gap:26px;}
   .testi-card{
@@ -238,7 +238,7 @@
   .testi-name{font-size:0.92rem; color:var(--bone); font-weight:600;}
   .testi-role{font-size:0.8rem; color:var(--bone-dim);}
 
-  /* ============ CTA BAND ============ */
+  /*  CTA BAND  */
   .cta-band{
     background:linear-gradient(135deg, #1c1410, #0e0c0b);
     border-top:1px solid var(--line); border-bottom:1px solid var(--line);
@@ -247,7 +247,7 @@
   .cta-band h2{font-size:clamp(2rem,4vw,3.2rem); color:var(--bone); margin-bottom:20px;}
   .cta-band p{color:var(--bone-dim); font-size:1.1rem; margin-bottom:40px;}
 
-  /* ============ FAQ ============ */
+  /*  FAQ  */
   .faq-item{border-bottom:1px solid var(--line);}
   .faq-q{
     display:flex; justify-content:space-between; align-items:center;
@@ -261,7 +261,7 @@
   }
   .faq-a p{color:var(--bone-dim); padding-bottom:24px; line-height:1.65; max-width:680px;}
 
-  /* ============ FOOTER ============ */
+  /*  FOOTER  */
   footer{padding:70px 0 36px; border-top:1px solid var(--line);}
   .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:56px;}
   .footer-brand .brand{margin-bottom:18px;}
@@ -274,7 +274,7 @@
     font-size:0.82rem; color:var(--bone-dim); flex-wrap:wrap; gap:12px;
   }
 
-  /* ============ RESPONSIVE ============ */
+  /*  RESPONSIVE  */
   @media (max-width: 920px){
     .navlinks, .nav-cta{display:none;}
     .burger{display:flex;}

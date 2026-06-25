@@ -3,7 +3,7 @@
     header.classList.toggle('scrolled', window.scrollY > 50);
   }, { passive: true });
 
-  /* ---- Hamburger / Mobile Nav ---- */
+  // Hamburger / Mobile Nav 
   const hamburger   = document.getElementById('hamburger');
   const mobileNav   = document.getElementById('mobileNav');
   const mobileClose = document.getElementById('mobileClose');
@@ -15,7 +15,7 @@
     mobileNav.classList.remove('open');
   }
 
-  /* ---- Scroll Reveal ---- */
+  // Scroll Reveal 
   const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 
   const observer = new IntersectionObserver((entries) => {
@@ -29,7 +29,7 @@
 
   revealEls.forEach(el => observer.observe(el));
 
-  /* ---- Form submit (demo) ---- */
+  // Form submit (demo)
   function submitForm(e) {
     e.preventDefault();
     document.getElementById('bookingForm').style.display = 'none';
@@ -41,7 +41,7 @@
     document.getElementById('formSuccess').classList.remove('show');
   }
 
-  /* ---- Active nav link highlight ---- */
+  // Active nav link highlight 
   const sections = document.querySelectorAll('section[id], footer');
   const navLinks  = document.querySelectorAll('nav a');
 
@@ -57,7 +57,7 @@
 
   document.querySelectorAll('section[id]').forEach(s => navObserver.observe(s));
 
-  /* ---- Set today as min date for booking ---- */
+  // Set today as min date for booking
   const dateInput = document.querySelector('input[type="date"]');
   if (dateInput) {
     dateInput.min = new Date().toISOString().split('T')[0];

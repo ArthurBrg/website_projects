@@ -31,7 +31,7 @@
     *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important;}
   }
 
-  /* ============ HEADER ============ */
+  /*  HEADER  */
   header{position:fixed; top:0; left:0; right:0; z-index:100; padding:24px 0; transition:all .3s ease;}
   header.scrolled{background:rgba(251,249,244,0.92); backdrop-filter:blur(10px); padding:14px 0; border-bottom:1px solid var(--line);}
   .nav{display:flex; align-items:center; justify-content:space-between;}
@@ -45,7 +45,7 @@
   .burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer;}
   .burger span{width:24px; height:2px; background:var(--ink);}
 
-  /* ============ HERO ============ */
+  /*  HERO  */
   .hero{min-height:100vh; display:flex; align-items:center; padding-top:130px; padding-bottom:70px; position:relative;}
   .hero::before{
     content:''; position:absolute; top:-10%; right:-10%; width:50%; height:60%;
@@ -96,20 +96,20 @@
   .jstep.done .label, .jstep.active .label{color:var(--paper);}
   .journey-foot{margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.12); font-size:0.85rem; color:rgba(255,255,255,0.55);}
 
-  /* ============ LOGOS ============ */
+  /*  LOGOS  */
   .logos{padding:50px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .logos .wrap{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;}
   .logos .label{font-size:0.82rem; color:var(--ink-soft); white-space:nowrap;}
   .logo-row{display:flex; gap:44px; flex-wrap:wrap; align-items:center; opacity:0.55; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1.05rem;}
 
-  /* ============ SECTION GENERIC ============ */
+  /*  SECTION GENERIC  */
   section{padding:110px 0;}
   .section-head{max-width:620px; margin-bottom:60px;}
   .section-head .eyebrow{margin-bottom:18px;}
   .section-head h2{font-size:clamp(2rem,3.4vw,2.6rem);}
   .section-head p{color:var(--ink-soft); margin-top:16px; font-size:1.05rem; line-height:1.6;}
 
-  /* ============ CURRICULUM ============ */
+  /*  CURRICULUM  */
   .curriculum{background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .module{border:1px solid var(--line); border-radius:var(--radius); margin-bottom:14px; overflow:hidden; background:var(--paper);}
   .module-head{display:flex; align-items:center; justify-content:space-between; padding:22px 26px; cursor:pointer;}
@@ -125,7 +125,7 @@
   .module-body li:first-child{border-top:1px solid var(--line);}
   .module-body li svg{color:var(--moss); flex-shrink:0;}
 
-  /* ============ PRICING ============ */
+  /*  PRICING  */
   .pricing-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
   .price-card{border:1px solid var(--line); border-radius:var(--radius); padding:38px 32px; background:#fff; position:relative; transition:transform .3s, box-shadow .3s;}
   .price-card.featured{border-color:var(--moss); box-shadow:0 20px 50px -20px rgba(47,93,79,0.35); transform:scale(1.02);}
@@ -145,7 +145,7 @@
   .price-card.featured .price-cta{background:var(--moss); border-color:var(--moss); color:#fff;}
   .price-card.featured .price-cta:hover{background:#274d41;}
 
-  /* ============ TESTIMONIALS ============ */
+  /*  TESTIMONIALS  */
   .testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
   .testi-card{background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:30px;}
   .testi-quote-mark{font-family:'Space Grotesk',sans-serif; font-size:2.6rem; color:var(--moss-light); line-height:1; margin-bottom:6px;}
@@ -155,14 +155,14 @@
   .testi-name{font-size:0.9rem; font-weight:600;}
   .testi-role{font-size:0.8rem; color:var(--ink-soft);}
 
-  /* ============ CTA BAND ============ */
+  /*  CTA BAND  */
   .cta-band{background:var(--ink); color:var(--paper); text-align:center; border-radius:24px; margin:0 32px; padding:90px 40px; position:relative; overflow:hidden;}
   .cta-band::before{content:''; position:absolute; top:-30%; left:50%; transform:translateX(-50%); width:60%; height:80%; background:radial-gradient(circle, rgba(212,167,44,0.18), transparent 70%);}
   .cta-band h2{font-size:clamp(2rem,4vw,3rem); margin-bottom:18px; position:relative; z-index:1;}
   .cta-band p{color:rgba(251,249,244,0.7); font-size:1.1rem; margin-bottom:36px; position:relative; z-index:1;}
   .cta-band .btn-primary{position:relative; z-index:1;}
 
-  /* ============ FAQ ============ */
+  /*  FAQ  */
   .faq-item{border-bottom:1px solid var(--line);}
   .faq-q{display:flex; justify-content:space-between; align-items:center; padding:24px 0; cursor:pointer; font-size:1.08rem; font-weight:600;}
   .faq-q .plus{font-size:1.5rem; color:var(--moss); font-weight:300; transition:transform .3s;}
@@ -170,7 +170,7 @@
   .faq-a{max-height:0; overflow:hidden; transition:max-height .35s ease;}
   .faq-a p{color:var(--ink-soft); padding-bottom:22px; line-height:1.65; max-width:680px;}
 
-  /* ============ FOOTER ============ */
+  /*  FOOTER  */
   footer{padding:70px 0 36px; margin-top:60px;}
   .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:50px;}
   .footer-brand p{color:var(--ink-soft); font-size:0.92rem; line-height:1.6; max-width:280px; margin-top:16px;}
@@ -179,7 +179,7 @@
   .footer-col a:hover{opacity:1; color:var(--moss);}
   .footer-bottom{display:flex; justify-content:space-between; padding-top:26px; border-top:1px solid var(--line); font-size:0.82rem; color:var(--ink-soft); flex-wrap:wrap; gap:12px;}
 
-  /* ============ RESPONSIVE ============ */
+  /*  RESPONSIVE  */
   @media (max-width:920px){
     .navlinks, .nav-cta{display:none;}
     .burger{display:flex;}
