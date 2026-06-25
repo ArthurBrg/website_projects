@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navalha & Cia — Barbearia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <svg class="mark" viewBox="0 0 30 30" fill="none">
+        <circle cx="15" cy="15" r="14" stroke="#d98a3d" stroke-width="1.2"/>
+        <path d="M8 11 L22 19 M8 19 L22 11" stroke="#ece4d6" stroke-width="1.3" stroke-linecap="round"/>
+      </svg>
+      Navalha&nbsp;&amp;&nbsp;Cia
+    </a>
+    <nav class="navlinks">
+      <a href="#servicos">Serviços</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#faq">Perguntas</a>
+    </nav>
+    <a href="#agendar" class="nav-cta">Agendar horário</a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <button class="close" id="closeDrawer" aria-label="Fechar menu">&times;</button>
+  <a href="#servicos">Serviços</a>
+  <a href="#equipe">Equipe</a>
+  <a href="#clientes">Clientes</a>
+  <a href="#faq">Perguntas</a>
+  <a href="#agendar">Agendar horário</a>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dash"></span>BARBEARIA DESDE 2014</div>
+        <h1>Corte certo, <em>navalha</em><br>na régua.</h1>
+        <p class="lead">Tradição de barbearia de bairro com técnica de salão fino. Cada corte é estudado, cada barba é desenhada — sem pressa, sem atalho.</p>
+        <div class="hero-ctas">
+          <a href="#agendar" class="btn btn-primary">Agendar horário</a>
+          <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="num">11</div><div class="label">Anos de bairro</div></div>
+          <div class="stat"><div class="num">4.9</div><div class="label">Nota média</div></div>
+          <div class="stat"><div class="num">6</div><div class="label">Barbeiros</div></div>
+        </div>
+      </div>
+      <div class="razor-stage">
+        <div class="razor-panel">
+          <div class="razor-line l1"></div>
+          <div class="razor-line l2"></div>
+          <div class="razor-line l3"></div>
+          <div class="razor-caption">
+            <span>Técnica de navalha</span>
+            <strong>Precisão milimétrica</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dash"></span>O CARDÁPIO</div>
+        <h2>Serviços, sem enrolação</h2>
+        <p>Preço fixo, tempo estimado e o que está incluso. Sem letra pequena.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-row">
+          <span class="service-no">01</span>
+          <span class="service-name">Corte clássico<span>Tesoura e máquina, acabamento na navalha</span></span>
+          <span class="service-time">40 min</span>
+          <span class="service-price">R$ 55</span>
+        </div>
+        <div class="service-row">
+          <span class="service-no">02</span>
+          <span class="service-name">Barba completa<span>Toalha quente, navalha e óleo finalizador</span></span>
+          <span class="service-time">35 min</span>
+          <span class="service-price">R$ 45</span>
+        </div>
+        <div class="service-row">
+          <span class="service-no">03</span>
+          <span class="service-name">Combo corte + barba<span>O pacote completo, de cabeça a queixo</span></span>
+          <span class="service-time">70 min</span>
+          <span class="service-price">R$ 90</span>
+        </div>
+        <div class="service-row">
+          <span class="service-no">04</span>
+          <span class="service-name">Sobrancelha na navalha<span>Design rápido, acabamento limpo</span></span>
+          <span class="service-time">15 min</span>
+          <span class="service-price">R$ 20</span>
+        </div>
+        <div class="service-row">
+          <span class="service-no">05</span>
+          <span class="service-name">Pigmentação de barba<span>Cobertura natural para grisalhos</span></span>
+          <span class="service-time">50 min</span>
+          <span class="service-price">R$ 70</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dash"></span>COMO FUNCIONA</div>
+        <h2>Da cadeira ao espelho</h2>
+        <p>Três passos, sempre na mesma ordem — é isso que garante o resultado.</p>
+      </div>
+      <div class="process">
+        <div class="process-card">
+          <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <h3>Conversa antes do corte</h3>
+          <p>Você senta, a gente escuta. Formato de rosto, rotina, referência — antes de qualquer tesoura tocar o cabelo.</p>
+        </div>
+        <div class="process-card">
+          <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h16M4 6h10M4 18h7"/></svg>
+          <h3>Execução em camadas</h3>
+          <p>Máquina define a base, tesoura ajusta o volume, navalha fecha o acabamento. Nessa ordem, sempre.</p>
+        </div>
+        <div class="process-card">
+          <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <h3>Aprovação no espelho</h3>
+          <p>Antes de você sair, a gente confere com você — de frente e de perfil. Só sai daqui satisfeito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="equipe">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dash"></span>QUEM CORTA</div>
+        <h2>A equipe da casa</h2>
+        <p>Cada barbeiro tem sua especialidade — escolha pelo estilo que você busca.</p>
+      </div>
+      <div class="team-grid">
+        <div class="barber-card">
+          <div class="barber-photo">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=500&q=80" alt="Retrato do barbeiro Diego Mota">
+            <span class="tag">Cortes clássicos</span>
+          </div>
+          <h3>Diego Mota</h3>
+          <div class="role">Barbeiro-chefe, 14 anos de ofício</div>
+        </div>
+        <div class="barber-card">
+          <div class="barber-photo">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=500&q=80" alt="Retrato do barbeiro Renan Costa">
+            <span class="tag">Barba e navalha</span>
+          </div>
+          <h3>Renan Costa</h3>
+          <div class="role">Especialista em barba, 8 anos</div>
+        </div>
+        <div class="barber-card">
+          <div class="barber-photo">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=500&q=80" alt="Retrato do barbeiro Theo Lima">
+            <span class="tag">Cortes modernos</span>
+          </div>
+          <h3>Theo Lima</h3>
+          <div class="role">Fades e desenhos, 5 anos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clientes">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dash"></span>QUEM JÁ SENTOU NA CADEIRA</div>
+        <h2>O que dizem os clientes</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="testi-track-wrap">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>Troquei de barbearia três vezes até achar essa. O Diego entende exatamente o que eu quero antes de eu terminar de explicar.</p>
+            <div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">Marcos Vinícius</div><div class="testi-role">Cliente desde 2021</div></div></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>A barba na navalha do Renan é outro nível. Saio de lá parecendo que tirei dez anos.</p>
+            <div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">Felipe Andrade</div><div class="testi-role">Cliente desde 2022</div></div></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>Ambiente sem pressa, café bom, e o corte sempre fiel ao que eu pedi. Recomendo de olhos fechados.</p>
+            <div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">Caio Bittencourt</div><div class="testi-role">Cliente desde 2019</div></div></div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>O Theo é fera em fade. Levei foto de referência e saiu idêntico, com acabamento mais limpo ainda.</p>
+            <div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">Lucas Prado</div><div class="testi-role">Cliente desde 2023</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="agendar">
+    <div class="wrap">
+      <h2>Marque seu horário<br>antes que a agenda fure.</h2>
+      <p>Resposta em poucos minutos pelo WhatsApp.</p>
+      <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn btn-primary">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dash"></span>DÚVIDAS COMUNS</div>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item open">
+          <div class="faq-q">Preciso agendar ou posso chegar direto?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Recomendamos agendar pelo WhatsApp para garantir o horário, mas também atendemos por ordem de chegada quando há vaga na agenda do dia.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Quais formas de pagamento vocês aceitam?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Dinheiro, Pix, e cartão de débito ou crédito em até 2x sem juros.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Posso escolher qual barbeiro vai me atender?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Sim. Ao agendar pelo WhatsApp, basta informar o nome do profissional de sua preferência.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Vocês atendem crianças?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Atendemos a partir de 7 anos, com horários específicos durante a semana para evitar espera.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 30 30" fill="none">
+            <circle cx="15" cy="15" r="14" stroke="#d98a3d" stroke-width="1.2"/>
+            <path d="M8 11 L22 19 M8 19 L22 11" stroke="#ece4d6" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          Navalha&nbsp;&amp;&nbsp;Cia
+        </div>
+        <p>Rua das Acácias, 248 — Vila Madalena, São Paulo. Atendimento de terça a sábado.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#servicos">Serviços</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#faq">Perguntas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Horários</h4>
+        <a href="#">Ter–Sex: 9h às 20h</a>
+        <a href="#">Sábado: 9h às 18h</a>
+        <a href="#">Domingo e segunda: fechado</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a>
+        <a href="mailto:contato@navalhacia.com.br">contato@navalhacia.com.br</a>
+        <a href="#">@navalhaecia</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Navalha & Cia. Todos os direitos reservados.</span>
+      <span>Feito com navalha e café.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

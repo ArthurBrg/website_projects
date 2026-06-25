@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORJA — Academia de Alta Performance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#top" class="brand"><span class="bolt">⚡</span>FORJA</a>
+    <nav class="navlinks">
+      <a href="#programas">Programas</a>
+      <a href="#coaches">Coaches</a>
+      <a href="#planos">Planos</a>
+      <a href="#resultados">Resultados</a>
+    </nav>
+    <a href="#planos" class="nav-cta">Treino grátis</a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <button class="close" id="closeDrawer" aria-label="Fechar menu">&times;</button>
+  <a href="#programas">Programas</a>
+  <a href="#coaches">Coaches</a>
+  <a href="#planos">Planos</a>
+  <a href="#resultados">Resultados</a>
+  <a href="#planos">Treino grátis</a>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg-text">FORJA</div>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="bar"></span>TREINO DE ALTA INTENSIDADE</div>
+        <h1>Seu limite<br>é só o que<br><span class="out">você ainda</span><br>não testou.</h1>
+        <p class="lead">Programas de força e condicionamento com acompanhamento de coach. Sem fórmula mágica — só treino certo, carga progressiva e consistência.</p>
+        <div class="hero-ctas">
+          <a href="#planos" class="btn btn-primary">Treino grátis de 7 dias</a>
+          <a href="#programas" class="btn btn-ghost">Ver programas</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="num"><span>1.8k</span></div><div class="label">Alunos ativos</div></div>
+          <div class="stat"><div class="num"><span>14</span></div><div class="label">Coaches certificados</div></div>
+          <div class="stat"><div class="num"><span>24h</span></div><div class="label">Funcionamento</div></div>
+        </div>
+      </div>
+      <div class="rep-panel">
+        <div class="rep-head">
+          <span>Sessão de hoje</span>
+          <div class="rep-live"><div class="pulse"></div>EM ANDAMENTO</div>
+        </div>
+        <div class="rep-count" id="repCount">0</div>
+        <div class="rep-label">repetições nesta série</div>
+        <div class="rep-bars" id="repBars"></div>
+        <div class="rep-foot">
+          <div class="rep-foot-item"><div class="num">4x12</div><div class="label">Séries x reps</div></div>
+          <div class="rep-foot-item"><div class="num">80kg</div><div class="label">Carga atual</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs" id="programas">
+    <div class="wrap" style="padding-top:120px; padding-bottom:0;">
+      <div class="section-head">
+        <div class="eyebrow"><span class="bar"></span>PROGRAMAS</div>
+        <h2>Escolha sua batalha</h2>
+        <p>Cada programa tem objetivo, frequência e progressão de carga definidos — você sabe exatamente onde está e para onde vai.</p>
+      </div>
+    </div>
+    <div class="program-grid">
+      <div class="program-card">
+        <svg class="program-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h2v10H6zM16 7h2v10h-2zM8 12h8M3 9v6M21 9v6"/></svg>
+        <h3>Força</h3>
+        <p>Foco em levantamentos básicos — squat, deadlift, bench — com progressão linear de carga.</p>
+        <div class="program-meta">4X / SEMANA</div>
+      </div>
+      <div class="program-card">
+        <svg class="program-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        <h3>HIIT</h3>
+        <p>Treino intervalado de alta intensidade para condicionamento e queima calórica.</p>
+        <div class="program-meta">3X / SEMANA</div>
+      </div>
+      <div class="program-card">
+        <svg class="program-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <h3>Hipertrofia</h3>
+        <p>Volume e frequência calculados para ganho de massa muscular magra.</p>
+        <div class="program-meta">5X / SEMANA</div>
+      </div>
+      <div class="program-card">
+        <svg class="program-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a4 4 0 014 4c0 1.5-1 2.5-2 3.5L12 22l-2-12.5C9 8.5 8 7.5 8 6a4 4 0 014-4z"/></svg>
+        <h3>Mobilidade</h3>
+        <p>Alongamento ativo e trabalho articular para prevenir lesões e melhorar performance.</p>
+        <div class="program-meta">2X / SEMANA</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="coaches">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="bar"></span>EQUIPE</div>
+        <h2>Coaches que cobram resultado</h2>
+        <p>Cada coach acompanha sua evolução de perto — sem planilha genérica, sem treino de prateleira.</p>
+      </div>
+      <div class="coach-grid">
+        <div class="coach-card">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80" alt="Coach Rafael Souza">
+          <div class="coach-overlay"><h3>Rafael Souza</h3><div class="role">Força e powerlifting</div></div>
+        </div>
+        <div class="coach-card">
+          <img src="https://images.unsplash.com/photo-1609899537878-88d5ba429bdb?w=500&q=80" alt="Coach Bianca Ferraz">
+          <div class="coach-overlay"><h3>Bianca Ferraz</h3><div class="role">HIIT e condicionamento</div></div>
+        </div>
+        <div class="coach-card">
+          <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500&q=80" alt="Coach Diego Martins">
+          <div class="coach-overlay"><h3>Diego Martins</h3><div class="role">Hipertrofia</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos" style="background:var(--charcoal); border-top:1px solid var(--steel); border-bottom:1px solid var(--steel);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="bar"></span>PLANOS</div>
+        <h2>Sem fidelidade, sem letra pequena</h2>
+        <p>Cancele quando quiser. O compromisso é seu, com seu objetivo.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Básico</h3>
+          <div class="desc">Acesso livre à musculação</div>
+          <div class="price-value"><span class="num">R$ 99</span><span class="per">/mês</span></div>
+          <ul class="price-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Acesso à área de musculação</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>App de treino</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Avaliação física mensal</li>
+          </ul>
+          <a href="#" class="price-cta">Começar agora</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Performance</h3>
+          <div class="desc">Musculação + aulas coletivas</div>
+          <div class="price-value"><span class="num">R$ 179</span><span class="per">/mês</span></div>
+          <ul class="price-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Tudo do plano Básico</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Aulas de HIIT e funcional ilimitadas</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Acompanhamento de coach quinzenal</li>
+          </ul>
+          <a href="#" class="price-cta">Começar agora</a>
+        </div>
+        <div class="price-card">
+          <h3>Elite</h3>
+          <div class="desc">Programa personalizado e 1 a 1</div>
+          <div class="price-value"><span class="num">R$ 349</span><span class="per">/mês</span></div>
+          <ul class="price-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Tudo do plano Performance</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Treino 100% personalizado</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Acompanhamento semanal 1 a 1</li>
+          </ul>
+          <a href="#" class="price-cta">Começar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results" id="resultados">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="bar"></span>RESULTADOS</div>
+        <h2>O treino fala por eles</h2>
+      </div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-metric"><div class="num">+18</div><div class="unit">kg no deadlift</div></div>
+          <p>Entrei achando que nunca ia levantar peso de verdade. Em 6 meses de programa de força, já superei minha própria meta.</p>
+          <div class="result-person"><div class="result-avatar"></div><div><div class="result-name">André Klein</div><div class="result-time">6 meses na FORJA</div></div></div>
+        </div>
+        <div class="result-card">
+          <div class="result-metric"><div class="num">-12</div><div class="unit">kg de gordura</div></div>
+          <p>O HIIT com a Bianca mudou meu condicionamento completamente. Hoje corro 5km sem parar — antes não aguentava 1km.</p>
+          <div class="result-person"><div class="result-avatar"></div><div><div class="result-name">Patrícia Lemos</div><div class="result-time">8 meses na FORJA</div></div></div>
+        </div>
+        <div class="result-card">
+          <div class="result-metric"><div class="num">+6</div><div class="unit">kg de massa magra</div></div>
+          <p>O plano de hipertrofia do Diego é cirúrgico. Ganhei massa de forma consistente, sem perder a mobilidade.</p>
+          <div class="result-person"><div class="result-avatar"></div><div><div class="result-name">Gustavo Reis</div><div class="result-time">10 meses na FORJA</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-band-inner">
+      <h2>Pare de adiar.<br>Comece <span>hoje</span>.</h2>
+      <p>Treino experimental gratuito por 7 dias, sem cartão de crédito.</p>
+      <a href="#planos" class="btn btn-primary">Quero meu treino grátis</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="bar"></span>DÚVIDAS</div>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div id="faqList">
+        <div class="faq-item open">
+          <div class="faq-q">Preciso ter experiência prévia com treino?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Não. Todo novo aluno passa por uma avaliação física e recebe um plano adaptado ao seu nível atual, do iniciante ao avançado.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Posso cancelar quando quiser?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Sim, todos os planos são mensais e sem fidelidade. O cancelamento pode ser feito a qualquer momento pelo app.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">A academia funciona em quais horários?<span class="plus">+</span></div>
+          <div class="faq-a"><p>A área de musculação funciona 24 horas. As aulas coletivas têm horários fixos disponíveis no app.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Como funciona o treino grátis de 7 dias?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Basta se cadastrar pelo site — você recebe acesso completo à academia e a uma aula coletiva, sem precisar cadastrar cartão.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="bolt">⚡</span>FORJA</div>
+        <p>Av. das Indústrias, 1200 — Barra Funda, São Paulo. Aberta 24 horas, todos os dias.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#programas">Programas</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#planos">Planos</a>
+        <a href="#resultados">Resultados</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5511988888888" target="_blank" rel="noopener">(11) 98888-8888</a>
+        <a href="mailto:contato@forja.com.br">contato@forja.com.br</a>
+        <a href="#">@forjatreino</a>
+      </div>
+      <div class="footer-col">
+        <h4>Funcionamento</h4>
+        <a href="#">Musculação: 24h, todos os dias</a>
+        <a href="#">Aulas coletivas: 6h às 22h</a>
+        <a href="#">Recepção: 6h às 22h</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FORJA Academia. Todos os direitos reservados.</span>
+      <span>CNPJ 00.000.000/0001-00</span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

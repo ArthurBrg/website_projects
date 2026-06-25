@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilha — Curso de Dados para Iniciantes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#top" class="brand"><span class="dot"></span>Trilha</a>
+    <nav class="navlinks">
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#planos">Planos</a>
+      <a href="#alunos">Alunos</a>
+      <a href="#faq">Perguntas</a>
+    </nav>
+    <a href="#planos" class="nav-cta">Começar agora</a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <button class="close" id="closeDrawer" aria-label="Fechar menu">&times;</button>
+  <a href="#conteudo">Conteúdo</a>
+  <a href="#planos">Planos</a>
+  <a href="#alunos">Alunos</a>
+  <a href="#faq">Perguntas</a>
+  <a href="#planos">Começar agora</a>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">🎓 Curso 100% online · acesso vitalício</div>
+        <h1>Aprenda dados do <span class="accent">zero</span> e mude de carreira em 12 semanas.</h1>
+        <p class="lead">Trilha prática com projetos reais de Excel, SQL e Python — pensada para quem nunca programou e quer um caminho claro até a primeira vaga.</p>
+        <div class="hero-ctas">
+          <a href="#planos" class="btn btn-primary">Ver planos e preços</a>
+          <a href="#conteudo" class="btn btn-ghost">Ver conteúdo do curso</a>
+        </div>
+        <div class="hero-trust">
+          <div class="avatar-stack"><span></span><span></span><span></span><span></span></div>
+          <div class="txt"><strong>2.340 alunos</strong> já concluíram a trilha</div>
+        </div>
+      </div>
+      <div class="journey-card">
+        <div class="journey-head">
+          <h3>Sua trilha de progresso</h3>
+          <div class="journey-pct" id="journeyPct">0%</div>
+        </div>
+        <div class="journey-steps" id="journeySteps">
+          <div class="jstep" data-step="1"><div class="dot">1</div><div class="label">Fundamentos de Excel</div></div>
+          <div class="jstep" data-step="2"><div class="dot">2</div><div class="label">SQL na prática</div></div>
+          <div class="jstep" data-step="3"><div class="dot">3</div><div class="label">Python para análise</div></div>
+          <div class="jstep" data-step="4"><div class="dot">4</div><div class="label">Projeto final + portfólio</div></div>
+        </div>
+        <div class="journey-foot">Tempo médio de conclusão: <strong style="color:#fbf9f4">12 semanas</strong>, 5h por semana.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logos">
+    <div class="wrap">
+      <span class="label">Nossos alunos hoje trabalham em</span>
+      <div class="logo-row">
+        <span>Nimbus</span><span>Cedro Corp</span><span>Vetta</span><span>Olira</span><span>Bandeira&nbsp;Tech</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="curriculum" id="conteudo">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">📚 Grade curricular</div>
+        <h2>O que você aprende, módulo por módulo</h2>
+        <p>Quatro módulos, cada um terminando em um projeto que entra no seu portfólio.</p>
+      </div>
+      <div id="moduleList">
+        <div class="module open">
+          <div class="module-head">
+            <div class="module-head-left">
+              <div class="module-num">01</div>
+              <div><h3>Fundamentos de Excel</h3><div class="module-meta">5 aulas · 3h de conteúdo</div></div>
+            </div>
+            <svg class="module-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="module-body">
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Fórmulas essenciais e formatação de dados</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Tabelas dinâmicas e dashboards simples</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Projeto: análise de vendas de uma loja fictícia</li>
+            </ul>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <div class="module-head-left">
+              <div class="module-num">02</div>
+              <div><h3>SQL na prática</h3><div class="module-meta">6 aulas · 4h de conteúdo</div></div>
+            </div>
+            <svg class="module-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="module-body">
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Consultas com SELECT, JOIN e filtros</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Agregações e subconsultas</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Projeto: banco de dados de uma rede de academias</li>
+            </ul>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <div class="module-head-left">
+              <div class="module-num">03</div>
+              <div><h3>Python para análise</h3><div class="module-meta">7 aulas · 5h de conteúdo</div></div>
+            </div>
+            <svg class="module-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="module-body">
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Pandas: limpeza e transformação de dados</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Visualização com Matplotlib</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Projeto: análise preditiva simples de churn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <div class="module-head-left">
+              <div class="module-num">04</div>
+              <div><h3>Projeto final + portfólio</h3><div class="module-meta">4 aulas · 4h de conteúdo</div></div>
+            </div>
+            <svg class="module-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="module-body">
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Construção de um portfólio no GitHub</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Apresentação do projeto final em vídeo</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Revisão de currículo e preparação para entrevistas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">💳 Planos</div>
+        <h2>Escolha como você quer aprender</h2>
+        <p>Todos os planos dão acesso vitalício ao conteúdo e às atualizações futuras.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Self-paced</h3>
+          <div class="desc">Para quem prefere estudar no próprio ritmo</div>
+          <div class="price-value"><span class="num">R$ 397</span><span class="per">pagamento único</span></div>
+          <ul class="price-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Acesso a todos os módulos</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Exercícios e projetos práticos</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Certificado de conclusão</li>
+          </ul>
+          <a href="#" class="price-cta">Escolher plano</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Mais escolhido</div>
+          <h3>Mentoria em grupo</h3>
+          <div class="desc">Acompanhamento semanal com instrutores</div>
+          <div class="price-value"><span class="num">R$ 697</span><span class="per">pagamento único</span></div>
+          <ul class="price-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Tudo do plano Self-paced</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Encontros semanais em grupo ao vivo</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Correção de projetos pelo instrutor</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Revisão de currículo</li>
+          </ul>
+          <a href="#" class="price-cta">Escolher plano</a>
+        </div>
+        <div class="price-card">
+          <h3>Mentoria individual</h3>
+          <div class="desc">1 a 1 com foco na sua transição de carreira</div>
+          <div class="price-value"><span class="num">R$ 1.490</span><span class="per">pagamento único</span></div>
+          <ul class="price-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Tudo do plano Mentoria em grupo</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>4 sessões 1 a 1 com instrutor</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg>Indicação para vagas parceiras</li>
+          </ul>
+          <a href="#" class="price-cta">Escolher plano</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alunos" style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">⭐ Histórias reais</div>
+        <h2>Quem já passou pela trilha</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <p>Eu trabalhava no varejo e não sabia nem o que era SQL. Em 4 meses depois de terminar o curso, consegui minha primeira vaga como analista júnior.</p>
+          <div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">Camila Reis</div><div class="testi-role">Analista de Dados Jr.</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <p>O que mais me ajudou foi ter projetos reais para colocar no portfólio. Isso fez toda diferença nas entrevistas.</p>
+          <div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">Bruno Tavares</div><div class="testi-role">Analista de BI</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <p>A mentoria individual valeu cada centavo. Meu mentor revisou meu currículo e simulou entrevistas comigo até eu me sentir pronto.</p>
+          <div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">Larissa Nogueira</div><div class="testi-role">Cientista de Dados Jr.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <h2>Sua próxima carreira começa<br>com a primeira aula.</h2>
+      <p>Garanta sua vaga antes que a turma de mentoria fecha.</p>
+      <a href="#planos" class="btn btn-primary">Quero começar agora</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">❓ Tire suas dúvidas</div>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div id="faqList">
+        <div class="faq-item open">
+          <div class="faq-q">Preciso ter experiência prévia com tecnologia?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Não. O curso foi desenhado para quem nunca programou. Começamos do absoluto zero, com Excel, antes de avançar para SQL e Python.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Por quanto tempo tenho acesso ao conteúdo?<span class="plus">+</span></div>
+          <div class="faq-a"><p>O acesso é vitalício em todos os planos, incluindo atualizações futuras de conteúdo sem custo adicional.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">E se eu não conseguir terminar em 12 semanas?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Sem problema — 12 semanas é apenas o tempo médio. Como o acesso é vitalício, você pode estudar no seu próprio ritmo.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Existe garantia de reembolso?<span class="plus">+</span></div>
+          <div class="faq-a"><p>Sim. Você tem 7 dias corridos após a compra para solicitar reembolso integral, sem perguntas.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="dot"></span>Trilha</div>
+        <p>Educação prática em dados para quem quer mudar de carreira com confiança.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Curso</h4>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#planos">Planos</a>
+        <a href="#alunos">Alunos</a>
+        <a href="#faq">Perguntas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Suporte</h4>
+        <a href="mailto:ajuda@trilha.com.br">ajuda@trilha.com.br</a>
+        <a href="#">Central de ajuda</a>
+        <a href="#">Política de reembolso</a>
+      </div>
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Trilha Educação Ltda. Todos os direitos reservados.</span>
+      <span>CNPJ 00.000.000/0001-00</span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
